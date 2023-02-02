@@ -4,6 +4,213 @@
   background-color: #272727;
 }
 
+.date {
+  margin: 0;
+  padding: 0;
+  color: #c1c1c1;
+}
+
+.exp-heading {
+  margin-bottom: 0;
+}
+
+.heading {
+  text-shadow: 1px 1px 3px #00FFFF;
+}
+
+.active {
+  border-radius: 8px;
+  background-color: #00AAAA;
+  color: #d1d1d1;
+  box-shadow: 1px 1px 2px #00CCCC, -1px -1px 2px #00CCCC;
+}
+
+#experience-list {
+  text-align: center;
+}
+
+.experience-list-item > span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #00CCCC;
+  transform-origin: top;
+  transition: all 1s;
+  opacity: 0;
+}
+.experience-list-item:hover .experience-list-item > span:before {
+  opacity: 0.7;
+  height: 100%;
+} 
+.experience-list-item > span:hover:before {
+  opacity: 0.7;
+  height: 100%;
+}
+.experience-list-item>span:hover .experience-list-item > span:before {
+  opacity: 0.7;
+  height: 100%;
+}
+
+.experience-list-item > span:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #00CCCC;
+  width: 0;
+  bottom: 0;
+  right: 0;
+  transform-origin: left;
+  transition: all 1s;
+}
+
+.experience-list-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #00CCCC;
+}
+
+.experience-list-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 2px;
+  background-color: #00CCCC;
+  transform-origin: top;
+  transition: all 1s;
+}
+
+.experience-list-item {
+  position: relative;
+  padding: 0 8px;
+  border-bottom: 4px;
+}
+
+.experience-list-item:hover {
+  cursor: pointer;
+}
+
+.experience-container {
+  width: 100%;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+}
+
+.experience-item {
+  text-align: left;
+}
+
+.linkedIn {
+  background-color: #0077b5;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding: 0 8px;
+  padding-bottom: 2px;
+  text-shadow: 2px 1px 2px #d1d1d1;
+  border-radius: 6px;
+  border: 2px solid #f1f1f1;
+}
+
+.links {
+  bottom: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+#mailTo {
+  color: #474747;
+  padding: 1rem;
+  background-color: #00AAAA;
+  font-size: 26px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+#projects {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.p > span {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  height: 100%;
+  width: 90%;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: scale(7);
+}
+
+.p > span:hover {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+#luxit:before, #activities:before, #oldport:before, #savethedate:before, #potatogeddon:before, #port3d:before {
+  position: absolute;
+  padding-top: 60px;
+  text-align: center;
+  content: "";
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+#luxit, #activities, #oldport, #savethedate, #potatogeddon, #port3d {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 1s;
+}
+
+#luxit:hover:before, #port3d:hover:before, #activities:hover:before, #oldport:hover:before, #savethedate:hover:before, #potatogeddon:hover:before {
+  opacity: 1;
+}
+
+.luxit, .activities, .oldport, .savethedate, .potatogeddon, .port3d {
+  height: 100%;
+  transition: all 1s;
+}
+
 hr {
   padding: 0;
   margin: 0;
@@ -20,9 +227,14 @@ hr {
 .work-page {
   color: white;
   background-color: #373737;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-page {
+  padding-top: 80px;
+  padding-bottom: 80px;
   color: #f1f1f1;
   background-color: #272727;
 }
@@ -30,6 +242,9 @@ hr {
 .contact-page {
   color: #f1f1f1;
   background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-page {

@@ -4,7 +4,7 @@ import SlideShow from "./slideshow";
 export default function AboutPage() {
     return(
         <div id="about" className="bg about-page">
-            <h1>About Me</h1>
+            <h1 className="heading">About Me</h1>
             <div className="flex-row">
                 <div className="about-text">
                     <p>

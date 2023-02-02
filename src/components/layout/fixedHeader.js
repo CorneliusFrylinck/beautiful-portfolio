@@ -4,7 +4,7 @@ import HeaderBtn from "./headerBtn";
 export default function FixedHeader() {
     return (
         <div className="fixed-header">
-            <button className="home-btn" href="#"><span>C</span></button>
+            <a className="home-btn" href="#main"><span>C</span></a>
             <div className="nav-container">
                 <div className="header-items">
                     <HeaderBtn link="#about" description="About" />

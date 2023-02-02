@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MainPage() {
     return(
-        <div className="bg main-page">
+        <div id="main" className="bg main-page">
             <div className="flex-row">
                 <div className="profile-container">
                     <div className="profile-displayed-container">
