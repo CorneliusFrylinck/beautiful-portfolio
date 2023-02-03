@@ -27,13 +27,13 @@ export default function ProjectPage() {
                     <img className="savethedate project" src={saveTheDate} alt="savethedate"/>
                     <span>Save The Date. A website I wrote to assist with wedding invitations for my own wedding.</span>
                 </div>
-                <div id="potatogeddon" className="p">
-                    <img className="potatogeddon project" src={potatogeddon} alt="potatogeddon"/>
-                    <span>Potatogeddon. A game I wrote in the first week of January 2023, but paused to focus on this portfolio and learning about Design Patterns.</span>
-                </div>
                 <div id="port3d" className="p">
                     <img className="port3d project" src={port3D} alt="3D Portfolio"/>
                     <span>3D Portfolio. An interactive game-like portfolio I wrote to improve my React skills and to create something interesting.</span>
+                </div>
+                <div id="potatogeddon" className="p">
+                    <img className="potatogeddon project" src={potatogeddon} alt="potatogeddon"/>
+                    <span>Potatogeddon. A game I wrote in the first week of January 2023, but paused to focus on this portfolio and learning about Design Patterns.</span>
                 </div>
             </div>
         </div>
