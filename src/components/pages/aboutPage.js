@@ -1,16 +1,7 @@
-import { observer } from "mobx-react-lite";
-import React, { useEffect } from "react";
-import { useStore } from "../../stores/store";
+import React from "react";
 import SlideShow from "./slideshow";
 
-export default observer(function AboutPage() {
-    const { loadingStore } = useStore();
-
-    useEffect(() => {
-        setTimeout(() => {
-            loadingStore.loading = false;
-        }, 5000);
-    }, [])
+export default function AboutPage() {
 
     return(
         <div id="about" className="bg about-page" >
@@ -31,4 +22,4 @@ export default observer(function AboutPage() {
             </div>
         </div>
     )
-})
+}
