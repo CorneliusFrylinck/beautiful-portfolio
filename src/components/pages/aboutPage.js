@@ -1,9 +1,19 @@
-import React from "react";
+import { observer } from "mobx-react-lite";
+import React, { useEffect } from "react";
+import { useStore } from "../../stores/store";
 import SlideShow from "./slideshow";
 
-export default function AboutPage() {
+export default observer(function AboutPage() {
+    const { loadingStore } = useStore();
+
+    useEffect(() => {
+        setTimeout(() => {
+            loadingStore.loading = false;
+        }, 5000);
+    }, [])
+
     return(
-        <div id="about" className="bg about-page">
+        <div id="about" className="bg about-page" >
             <h1 className="heading">About Me</h1>
             <div className="flex-row">
                 <div className="about-text">
@@ -21,4 +31,4 @@ export default function AboutPage() {
             </div>
         </div>
     )
-}
+})

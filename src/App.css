@@ -641,3 +641,34 @@ html {
     max-width: 100px;
   }
 }
+
+#loader {
+  position: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+  font-size: 25rem;
+  box-shadow: inset 1px 1px 10px 2px #00CCCC;
+}
+
+#loader > span {
+  text-shadow: 1px 1px 7px #00FFFF, -1px -1px 7px #00FFFF;
+  perspective: 1000px;
+  animation: rotator 2s ease infinite;
+}
+
+
+@keyframes rotator {
+  0% {transform: perspective(400px) rotateY(0deg)}
+  100% {transform: perspective(400px) rotateY(360deg)}
+}
