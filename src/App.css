@@ -234,6 +234,41 @@ hr {
   justify-content: center;
 }
 
+.about-page > .heading {
+  overflow: hidden;
+  position: relative;
+  color: transparent;
+  text-shadow: none;
+}
+
+.about-page > .heading:before {
+  content: "about ME";
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  text-shadow: -2px -1px 4px #00AAAA, -1px -1px 5px #00FFFF, 2px 1px 4px #00AAAA, 1px 1px 5px #00FFFF;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.about-page > .heading:hover:before {
+  transform: translateY(0%);
+}
+
+.about-page > .heading:after {
+  content: "about ME";
+  text-transform: uppercase;
+  position: absolute;
+  color: white;
+  text-shadow: -2px -1px 4px #008888, -1px -1px 5px #00CCCC, 2px 1px 4px #008888, 1px 1px 5px #00CCCC;
+  transform: translateY(0%) translateX(-92%);
+  transition: all 1s;
+}
+
+.about-page > .heading:hover:after {
+  transform: translateY(100%) translateX(-92%);
+}
+
 .work-page {
   color: white;
   background-color: #373737;
@@ -242,11 +277,83 @@ hr {
   justify-content: center;
 }
 
+.work-page > .heading {
+  overflow: hidden;
+  position: relative;
+  color: transparent;
+  text-shadow: none;
+}
+
+.work-page > .heading:before {
+  content: "Work Experience & Education";
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  text-shadow: -2px -1px 4px #00AAAA, -1px -1px 5px #00FFFF, 2px 1px 4px #00AAAA, 1px 1px 5px #00FFFF;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.work-page > .heading:hover:before {
+  transform: translateY(0%);
+}
+
+.work-page > .heading:after {
+  content: "Work Experience & Education";
+  text-transform: uppercase;
+  position: absolute;
+  color: white;
+  text-shadow: -2px -1px 4px #008888, -1px -1px 5px #00CCCC, 2px 1px 4px #008888, 1px 1px 5px #00CCCC;
+  transform: translateY(0%) translateX(-86%);
+  transition: all 1s;
+}
+
+.work-page > .heading:hover:after {
+  transform: translateY(100%) translateX(-86%);
+}
+
 .project-page {
   padding-top: 80px;
   padding-bottom: 80px;
+  padding-left: 0;
+  position: relative;
   color: #f1f1f1;
   background-color: #272727;
+}
+
+.project-page > .heading {
+  overflow: hidden;
+  position: relative;
+  color: transparent;
+  text-shadow: none;
+}
+
+.project-page > .heading:before {
+  content: "project ME";
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  text-shadow: -2px -1px 4px #00AAAA, -1px -1px 5px #00FFFF, 2px 1px 4px #00AAAA, 1px 1px 5px #00FFFF;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.project-page > .heading:hover:before {
+  transform: translateY(0%);
+}
+
+.project-page > .heading:after {
+  content: "project ME";
+  text-transform: uppercase;
+  position: absolute;
+  color: white;
+  text-shadow: -2px -1px 4px #008888, -1px -1px 5px #00CCCC, 2px 1px 4px #008888, 1px 1px 5px #00CCCC;
+  transform: translateY(0%) translateX(-63%);
+  transition: all 1s;
+}
+
+.project-page > .heading:hover:after {
+  transform: translateY(100%) translateX(-63%);
 }
 
 .contact-page {
@@ -255,6 +362,39 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.contact-page > .heading {
+  overflow: hidden;
+  position: relative;
+  color: transparent;
+  text-shadow: none;
+}
+
+.contact-page > .heading:before {
+  content: "CONTACT ME";
+  color: white;
+  position: absolute;
+  text-shadow: -2px -1px 4px #00AAAA, -1px -1px 5px #00FFFF, 2px 1px 4px #00AAAA, 1px 1px 5px #00FFFF;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.contact-page > .heading:hover:before {
+  transform: translateY(0%);
+}
+
+.contact-page > .heading:after {
+  content: "CONTACT ME";
+  position: absolute;
+  color: white;
+  text-shadow: -2px -1px 4px #008888, -1px -1px 5px #00CCCC, 2px 1px 4px #008888, 1px 1px 5px #00CCCC;
+  transform: translateY(0%) translateX(-100%);
+  transition: all 1s;
+}
+
+.contact-page > .heading:hover:after {
+  transform: translateY(100%) translateX(-100%);
 }
 
 .main-page {
