@@ -799,6 +799,7 @@ html {
   overflow: hidden;
   font-size: 25rem;
   box-shadow: inset 1px 1px 10px 2px #00CCCC;
+  cursor: progress;
 }
 
 #loader > span {
